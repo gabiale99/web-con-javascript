@@ -332,6 +332,7 @@ header {
 
         p {
           color: var(--color-text-grey-hero);
+          line-height: 1.4;
         }
 
         &:hover {
@@ -341,6 +342,41 @@ header {
             background-color: #d7d6e4;
           }
         }
+      }
+    }
+  }
+}
+
+/* Sección 2 características móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-2 {
+    .container-seccion-2 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .grid-caracteristicas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+      }
+    }
+  }
+}
+
+/* Sección 2 características tablet */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  .seccion-2 {
+    .container-seccion-2 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.7rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
