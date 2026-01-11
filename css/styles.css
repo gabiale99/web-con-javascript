@@ -617,3 +617,33 @@ header {
     }
   }
 }
+
+/* Sección 4 formulario móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-4 {
+    .container-seccion-4 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Sección 4 formulario tablet */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  .seccion-4 {
+    .container-seccion-4 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.7rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
