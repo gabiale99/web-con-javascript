@@ -382,7 +382,7 @@ header {
   }
 }
 
-/* Sección 2 clientes */
+/* Sección 3 clientes */
 
 .seccion-3 {
   background-color: var(--background-primary);
@@ -464,6 +464,41 @@ header {
             }
           }
         }
+      }
+    }
+  }
+}
+
+/* Sección 3 usuarios móvil */
+
+@media screen and (max-width: 430px) {
+  .seccion-3 {
+    .container-seccion-3 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .grid-clientes {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+/* Sección 3 usuarios tablet */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  .seccion-3 {
+    .container-seccion-3 {
+      width: 90%;
+
+      h3 {
+        font-size: 2.7rem;
+        margin-bottom: 0.5rem;
       }
     }
   }
