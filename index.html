@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tu app</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -509,7 +510,7 @@
             Contáctanos hoy descubre cómo podemos ayudarte a alcanzar tus
             objetivos
           </p>
-          <form action="">
+          <form action="" id="mi-formulario">
             <h4>Envíanos un mensaje</h4>
             <p>
               Completa el formulario y nuestro equipo se pondrá en contacto
@@ -533,8 +534,30 @@
                 <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
               </svg>
               <label for="name">Nombre completo</label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="svg-2 icon icon-tabler icons-tabler-outline icon-tabler-asterisk"
+                id="svg-1"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12l8 -4.5" />
+                <path d="M12 12v9" />
+                <path d="M12 12l-8 -4.5" />
+                <path d="M12 12l8 4.5" />
+                <path d="M12 3v9" />
+                <path d="M12 12l-8 4.5" />
+              </svg>
             </div>
             <input type="text" name="name" id="name" placeholder="Tu nombre" />
+            <p class="text-error" id="texto-error1">Nombre invalido</p>
             <div class="container-icono-text">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -555,6 +578,27 @@
                 <path d="M3 7l9 6l9 -6" />
               </svg>
               <label for="email">Email</label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="svg-2 icon icon-tabler icons-tabler-outline icon-tabler-asterisk"
+                id="svg-2"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12l8 -4.5" />
+                <path d="M12 12v9" />
+                <path d="M12 12l-8 -4.5" />
+                <path d="M12 12l8 4.5" />
+                <path d="M12 3v9" />
+                <path d="M12 12l-8 4.5" />
+              </svg>
             </div>
             <input
               type="email"
@@ -562,6 +606,7 @@
               id="email"
               placeholder="Tu@email.com"
             />
+            <p class="text-error" id="texto-error2">Email invalido</p>
             <div class="container-icono-text">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -583,13 +628,35 @@
                 />
               </svg>
               <label for="texto">Mensaje</label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="svg-2 icon icon-tabler icons-tabler-outline icon-tabler-asterisk"
+                id="svg-3"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12l8 -4.5" />
+                <path d="M12 12v9" />
+                <path d="M12 12l-8 -4.5" />
+                <path d="M12 12l8 4.5" />
+                <path d="M12 3v9" />
+                <path d="M12 12l-8 4.5" />
+              </svg>
             </div>
             <textarea
               name="texto"
               id="texto"
               placeholder="Cuéntanos sobre tu proyecto"
             ></textarea>
-            <button type="">
+            <p class="text-error" id="texto-error3">Mensaje invalido</p>
+            <button type="submit" id="btn-enviar">
               Enviar mensaje
               <svg
                 xmlns="http://www.w3.org/2000/svg"

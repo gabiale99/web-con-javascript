@@ -561,6 +561,15 @@ header {
         label {
           font-family: "Roboto", sans-serif;
         }
+
+        .svg-2 {
+          width: 0.5rem;
+        }
+
+        .svg-2-error {
+          color: #cd1b21;
+          width: 0.5rem;
+        }
       }
 
       input {
@@ -575,12 +584,22 @@ header {
         }
       }
 
+      .text-error {
+        display: none;
+      }
+
+      .text-error-open {
+        display: block;
+        color: #cd1b21;
+      }
+
       textarea {
         font-family: "Roboto", sans-serif;
         padding: 0.5rem;
         border: 1px solid var(--border-button-hero);
         border-radius: 10px;
         height: 10rem;
+        margin-bottom: 1rem;
 
         &:focus {
           outline: 3px solid var(--color-primary);
