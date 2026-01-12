@@ -804,3 +804,24 @@ footer {
     }
   }
 }
+
+/* Sección 4 footer tablet */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  footer {
+    .container-footer {
+      width: 90%;
+
+      .container-datos {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .container-derechos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
