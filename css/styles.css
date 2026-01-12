@@ -783,3 +783,24 @@ footer {
     }
   }
 }
+
+/* Sección 4 footer móvil */
+
+@media screen and (max-width: 430px) {
+  footer {
+    .container-footer {
+      width: 90%;
+
+      .container-datos {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .container-derechos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
